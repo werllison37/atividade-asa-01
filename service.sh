@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Nomes dos serviços e caminhos dos Dockerfiles
 SERVICE=$1
 ACTION=$2
 SDNS="dns"
@@ -8,7 +7,6 @@ SWEB="web"
 DDNS="./dns"
 DWEB="./web"
 
-# Exibir ajuda
 help() {
     echo "Como utilizar: ./service.sh <dns|web> <comando>"
     echo "Comandos disponíveis:"
@@ -19,13 +17,11 @@ help() {
     echo "  remove  - Remover o container e a imagem do serviço"
 }
 
-# Verificar argumentos
 if [ $# -ne 2 ] && [ "$ACTION" != "help" ]; then
     help
     exit 1
 fi
 
-# Funções principais
 case $ACTION in
     build)
         echo "Construindo a imagem $SERVICE..."
