@@ -7,7 +7,7 @@ $TTL    604800
                         604800 )  ; Negative Cache TTL
 
 @       IN      NS      ns.werllison37.com.
-@       IN      A       192.168.0.191
-ns      IN      A       192.168.0.191
-www     IN      A       192.168.0.191
+@       IN      A       192.168.88.68
+ns      IN      A       192.168.88.68
+www     IN      A       192.168.88.68
 portal  IN      CNAME   www
