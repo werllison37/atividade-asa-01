@@ -11,7 +11,7 @@ help() {
     echo "Como utilizar: ./service.sh <dns|web> <comando>"
     echo "Comandos disponíveis:"
     echo "  build    - Construir a imagem do serviço."
-    echo "  start    - Criar ou Iniciar o container do serviço."
+    echo "  start    - Criar ou iniciar o container do serviço."
     echo "  stop     - Parar o container do serviço."
     echo "  restart  - Reiniciar o container do serviço."
     echo "  remove   - Remover o container e a imagem do serviço."
