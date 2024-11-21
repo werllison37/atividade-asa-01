@@ -1,12 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Werllison37</title>
+    <title>Projeto ASA</title>
+    <!-- Adicionando a fonte Bebas Neue -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo padrão */
+        body {
+            background-color: white;
+            color: white; /* Cor da fonte agora será branca */
+            font-family: 'Bebas Neue', sans-serif; /* Fonte Bebas Neue aplicada globalmente */
+            margin: 0;
+            padding: 0;
+            background-image: url('https://cdn.discordapp.com/attachments/1231720057504268378/1308958294538457129/background.jpg?ex=673fd5e8&is=673e8468&hm=c47517a22c6aba7ade767893b4f2a1c6a80dd6fe854972a2dbb5c07017f92582&'); /* Link da imagem de fundo */
+            background-size: cover; /* Faz a imagem cobrir toda a tela */
+            background-position: center center; /* Centraliza a imagem */
+            background-attachment: fixed; /* Garante que a imagem de fundo fique fixa */
+            font-size: 20px; /* Aumento geral da fonte */
+        }
+
+        /* Estilo do título principal */
+        h1 {
+            text-align: center;
+            padding-top: 20px; /* Menos espaçamento no topo */
+            font-size: 50px; /* Tamanho aumentado do título */
+        }
+
+        /* Estilo da seção sobre o site */
+        .about-site {
+            text-align: center;
+            font-size: 22px; /* Tamanho aumentado para o "Sobre o site" */
+            margin-top: 90px; /* Mais perto do texto do sobre o site */
+            padding: 0 10%;
+            line-height: 1.6;
+        }
+
+        /* Estilo do título sobre o site */
+        .about-site h2 {
+            font-size: 28px; /* Aumento no título do "Sobre o site" */
+            margin-bottom: -20px; /* Menos espaçamento abaixo do título */
+        }
+
+        /* Estilo do link do repositório */
+        .github-link {
+            text-align: center;
+            margin-top: 70px; /* Mais espaçamento superior */
+            font-size: 22px; /* Aumento no tamanho do texto do link */
+        }
+
+        .github-link p {
+            margin-bottom: 5px; /* Espaço entre o texto e o link */
+            text-align: center;
+            font-size: 28px; /* Tamanho igual ao "Sobre o site" */
+        }       
+        
+        .github-link a {
+            display: inline-block;
+            font-size: 22px; /* Tamanho maior, igual ao texto abaixo do "Sobre o site" */
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .github-link a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo da imagem do repositório */
+        .repo-image {
+            display: block;
+            margin: 5px auto; /* Mais espaçamento ao redor da imagem */
+            width: 371px; /* Largura especificada */
+            height: 215px; /* Altura especificada */
+            border: 2px solid #3498db;
+            border-radius: 8px;
+        }
+
+        /* Estilo do texto final (créditos) */
+        .credits {
+            text-align: center;
+            font-size: 20px; /* Aumento da fonte no texto de créditos */
+            margin-top: 50px;
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+        }
+
+        /* Adicionar algum padding nas áreas */
+        .content {
+            padding: 20px;
+        }
+
+        /* Estilo para o logo no canto inferior direito */
+        .logo {
+            position: fixed;
+            bottom: 30px; /* Distância do fundo */
+            right: 30px; /* Distância da direita */
+            width: 100px; /* Ajuste o tamanho conforme necessário */
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>Bem-vindo ao site www.werllison37.com!</h1>
+    <div class="content">
+        <!-- Nome do projeto -->
+        <h1>Bem-vindo(a) ao site do meu projeto!</h1>
+
+        <!-- Sobre o site -->
+        <div class="about-site">
+            <h2>Sobre o site:</h2>
+            <p>
+                Site desenvolvido como projeto da disciplina <strong>Administração de Sistemas Abertos</strong>,<br>
+                do curso superior de tecnologia em <strong>Redes de Computadores</strong>,<br>
+                no campus Natal-Central do <strong>IFRN</strong>.
+            </p>
+        </div>
+
+        <!-- Link para o repositório no GitHub -->
+        <div class="github-link">
+            <p>Confira o repositório do projeto no GitHub:</p>
+            <a href="https://github.com/werllison37/atividade-asa-01" target="_blank">https://github.com/werllison37/atividade-asa-01</a>
+        </div>
+
+        <!-- Imagem sugestiva do repositório -->
+        <img src="https://cdn.discordapp.com/attachments/1231720057504268378/1308962981287039047/Screenshot_2.png?ex=673fda46&is=673e88c6&hm=5065faf2b36f4b9d3bbfa15ee6af6c0d603c07684008d98988e11a7c82fb9933&" alt="Repositório no GitHub" class="repo-image">
+    </div>
+
+    <!-- Créditos -->
+    <div class="credits">
+        <p>Criado por: Werllison Lopes Galvão</p>
+    </div>
+
+    <!-- Logo da instituição -->
+    <img src="https://cdn.discordapp.com/attachments/1231720057504268378/1308994406254121040/Campus_Natal-Central_-_Logo_Color_Vert.png?ex=673ff78a&is=673ea60a&hm=8680f47d702f691c9e96940a5612933c3a3efd923d2010237abf61fd279dae6c&" alt="Logo do IFRN" class="logo">
 </body>
 </html>
