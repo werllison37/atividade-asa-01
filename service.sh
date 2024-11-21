@@ -10,12 +10,13 @@ DWEB="./web"
 help() {
     echo "Como utilizar: ./service.sh <dns|web> <comando>"
     echo "Comandos disponíveis:"
-    echo "  build   - Construir a imagem do serviço."
-    echo "  start   - Criar ou Iniciar o container do serviço."
-    echo "  stop    - Parar o container do serviço."
-    echo "  restart - Reiniciar o container do serviço."
-    echo "  remove  - Remover o container e a imagem do serviço."
-    echo "  help    - Lista todos os comandos disponíveis."
+    echo "  build    - Construir a imagem do serviço."
+    echo "  start    - Criar ou Iniciar o container do serviço."
+    echo "  stop     - Parar o container do serviço."
+    echo "  restart  - Reiniciar o container do serviço."
+    echo "  remove   - Remover o container e a imagem do serviço."
+    echo "  logs     - Verificar os logs do container."
+    echo "  help     - Lista todos os comandos disponíveis."
 }
 
 if [ $# -ne 2 ] && [ "$ACTION" != "help" ]; then
@@ -60,11 +61,15 @@ case $ACTION in
         docker rm -f $SERVICE 2>/dev/null
         docker rmi -f $SERVICE 2>/dev/null
         ;;
+    logs)
+        echo "Exibindo os logs do container $SERVICE..."
+        docker logs $SERVICE
+        ;;
     help)
         help
         ;;
     *)
-        echo "Ação inválida: $ACTION. Use build, start, stop, restart, remove ou help."
+        echo "Ação inválida: $ACTION. Use build, start, stop, restart, remove, logs ou help."
         exit 1
         ;;
 esac

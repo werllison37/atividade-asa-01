@@ -35,5 +35,6 @@ Comandos disponíveis:
 • stop    - Parar o container do serviço.
 • restart - Reiniciar o container do serviço.
 • remove  - Remover o container e a imagem do serviço.
+• logs    - Verificar os logs do container.
 • help    - Lista todos os comandos disponíveis.
 ```
